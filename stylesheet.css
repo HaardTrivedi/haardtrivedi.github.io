@@ -15,7 +15,7 @@ html{
 body{
     background-image: url("./images/skyline.jpg");
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     opacity: 0.99;
     width: 100%;
     margin: 0px;
@@ -394,7 +394,6 @@ button{
 
     .welcome-component::before{
         right: 81.5%;
-        content: " ";
         display: inline-block;
         height: 2px;
         margin: 0 10px;
@@ -402,11 +401,10 @@ button{
         top: 50%;
         width: 10%;
         zoom: 1;
-        background: black;
+        background: transparent;
     }
     
     .welcome-component::after{
-        content: " ";
         left: 81.5%;
         display: inline-block;
         height: 2px;
@@ -415,7 +413,7 @@ button{
         top: 50%;
         width: 10%;
         zoom: 1;
-        background: black;
+        background: transparent;
     }
     
     .about-component::before{
@@ -428,7 +426,7 @@ button{
         width: 10%;
         zoom: 1;
         top: 50%;
-        background: red;
+        background: transparent;
     }
     
     .about-component::after{
@@ -441,7 +439,7 @@ button{
         width: 10%;
         zoom: 1;
         top: 50%;
-        background: red;
+        background: transparent;
     }
     
     .skills-component::before{
@@ -454,7 +452,7 @@ button{
         width: 80px;
         zoom: 1;
         top: 50%;
-        background: lime;
+        background: transparent;
     }
     
     .skills-component::after{
@@ -467,7 +465,7 @@ button{
         width: 80px;
         zoom: 1;
         top: 50%;
-        background: lime;
+        background: transparent;
     }
     
     .exp-component::before{
@@ -479,7 +477,7 @@ button{
         width: 80px;
         zoom: 1;
         top: 50%;
-        background: blue;
+        background: transparent;
     }
     
     .exp-component::after{
@@ -491,7 +489,7 @@ button{
         width: 80px;
         zoom: 1;
         top: 50%;
-        background: blue;
+        background: transparent;
     }
 
     .contact-component::before{
@@ -503,7 +501,7 @@ button{
         width: 80px;
         zoom: 1;
         top: 50%;
-        background: yellow;
+        background: transparent;
     }
     
     .contact-component::after{
@@ -515,7 +513,7 @@ button{
         width: 80px;
         zoom: 1;
         top: 50%;
-        background: yellow;
+        background: transparent;
     }
 }
 
