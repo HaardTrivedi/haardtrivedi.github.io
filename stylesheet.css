@@ -338,8 +338,29 @@ button{
     opacity: 0.99;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-device-width:768px) {
     /* CSS for screens that are 768 pixels or less will be put in this section */
+    html{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    body{
+        background-image: url("./images/skyline.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        opacity: 0.99;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        top: 0%;
+        background-position-x: center;
+        background-position-y: top;
+    }
+
     .btn-plus{
         align-content: center;
         position: sticky;
