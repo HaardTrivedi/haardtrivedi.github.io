@@ -357,17 +357,17 @@ button{
         margin: 0px;
         padding: 0px;
         top: 0%;
+        background-position-x: center;
         background-position-y: top;
     }
 
     .btn-plus{
         align-content: center;
-        position: sticky;
         float: left;
         align-items: center;
         align-self: center;
         width: 5%;
-        height: 3.5%;
+        height: 3.0%;
         shape-image-threshold: 0;
         background-image: url("./images/menu.png");
         background-size: 100%;
