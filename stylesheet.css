@@ -351,7 +351,7 @@ button{
     body{
         background-image: url("./images/skyline.jpg");
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         opacity: 0.99;
         width: 100%;
         margin: 0px;
