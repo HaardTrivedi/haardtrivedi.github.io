@@ -25,6 +25,10 @@ body{
     background-position-y: top;
 }
 
+.show-mobile{
+    display: none;
+}
+
 .welcome{
     height: 725px;
     text-align: center;
@@ -367,7 +371,7 @@ button{
         align-items: center;
         align-self: center;
         width: 5%;
-        height: 5%;
+        height: 10%;
         shape-image-threshold: 0;
         background-image: url("./images/menu.png");
         background-repeat: no-repeat;
@@ -390,6 +394,14 @@ button{
         position: relative;
         align-self: center;
         top: 5%;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .show-mobile{
+        display: inline;
     }
 
     .welcome-component::before{
@@ -581,4 +593,7 @@ button{
     .main-timeline .timeline-content,.main-timeline .timeline:nth-child(2n) .timeline-content{padding-left:110px}
     .main-timeline .timeline-content:before,.main-timeline .timeline:nth-child(2n) .timeline-content:before{left:99px}
     .main-timeline .timeline-content:after,.main-timeline .timeline:nth-child(2n) .timeline-content:after{left:65px}
+    .main-timeline .timeline:nth-child(1)::before{height: 22.5%; width: 7.5%;}
+    .main-timeline .timeline:nth-child(n+2)::before{height: 12.5%; width: 5%;}
+    .main-timeline .timeline-content:after{width:5%;left:17.5%;}
 }
