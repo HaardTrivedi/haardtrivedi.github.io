@@ -26,8 +26,26 @@
 
 <body>
 	<div style="overflow: hidden;">
-		<div class="dropup dropdown-menu-right fixed-bottom">
-			<button class="btn btn-plus dropdown-menu-right" type="button" id="dropdownMenuButton"
+		<div class="hide-mobile">
+			<button style="margin-left: 96.5%;" class="dropup dropdown-menu-right fixed-bottom btn btn-plus hide-mobile"
+				type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+				data-aos="zoom-in" data-aos-offset="0">
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#about">About</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#skills">Skills</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#experience">Experience</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#contact">My Links</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="./resume.pdf" download="Haard Trivedi Resume">Resume</a>
+			</div>
+		</div>
+
+		<div class="show-mobile">
+			<button class="btn btn-plus fixed-top show-mobile" style="height: 5%;" type="button" id="dropdownMenuButton"
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-aos="zoom-in" data-aos-offset="0">
 			</button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -42,42 +60,41 @@
 				<a class="dropdown-item" href="./resume.pdf" download="Haard Trivedi Resume">Resume</a>
 			</div>
 		</div>
-		<div class="welcome align-content-center">
-			<p class="welcome-subtitle hide-mobile" data-aos="slide-down" data-aos-offset="0">Hi, My Name is</p>
-			<h1 class="welcome-component hide-mobile" data-aos="slide-up" data-aos-offset="0">Haard Trivedi</h1>
-			<h1 class="welcome-component show-mobile" data-aos="slide-up" data-aos-offset="0">Haard</h1>
-			<br>
-			<h1 class="welcome-component show-mobile" data-aos="slide-up" data-aos-offset="0">Trivedi</h1>
-			<br>
-			<a style="color: white" href="./resume.pdf" download="Haard Trivedi Resume"><button type="button"
-					class="btn resume-btn btn-info btn-lg" data-aos="zoom-out"><img
+
+		<div class="welcome bg-dark align-content-center">
+			<p class="welcome-subtitle" data-aos="slide-down" data-aos-offset="0">Hi, My Name is</p>
+			<h1 class="welcome-component hide-mobile typewriter">Haard Trivedi <span class="cursor-anim">|</span></h1>
+			<h1 class="welcome-component-mobile show-mobile">Haard Trivedi<span class="cursor-anim">|</span></h1>
+			<div style="margin: 5%;" data-aos="zoom-in" data-aos-offset="0"><img src="./images/programmer.gif" style="height: 35%; width: 35%;"></div>
+			<a style="color: white; height: 10%;" href="./resume.pdf" download="Haard Trivedi Resume"><button
+					type="button" class="btn resume-btn btn-light btn-lg" data-aos="zoom-out"><img
 						src="https://img.icons8.com/ios-filled/40/000000/open-resume.png">Resume</button></a>
 		</div>
+
 		<!--About-->
 		<div id="about" class="container-fluid bg-light align-content-center"
-			style="padding-left: 5%; padding-top: 10%; padding-bottom: 10%; padding-right: 5%; width: auto; position: relative;">
-			<h3 class="about-component" data-aos="slide-up">Get to Know Me</h3>
+			style="padding-left: 5%; padding-top: 5%; padding-bottom: 5%; padding-right: 5%; width: auto; position: relative;">
+			<h3 class="section-title-dark" data-aos="slide-up">Get to Know Me</h3>
 			<div class="row">
 				<div class="col-md-4"><img src="./images/profile_pic.png" class="profile-pic" data-aos="fade-right"
 						data-aos-once="true"></div>
 				<div class="col-md-8" style="text-align: justify;" data-aos="fade-left" data-aos-once="true">
-					<p>Hello there - Welcome to my page!</p>
-					<p>I am currently a 3rd year student at the <span style="color: darkred; font-weight: bold">University
-							of Ottawa</span> (about to enter my 4th year) working towards my undergraduate for <span
-							style="color: blue; font-weight: bold">Bachelor's
-							of Applied Sciences</span> in <span style="color: blue; font-weight: bold">Software
-							Engineering</span>. I have taken many courses including, introduction to Software
-						Engineering, Python, Java, Operating systems, and UI and QA.</p>
-					<p>As part of my <span style="color: blue; font-weight: bold">Mandatory Co-op</span> I have
+					<p>Hello there (General Kenobi, sorry had to say it) - Welcome to my page!</p>
+					<p>I am currently a 4th year student at the <span
+							style="color: darkred; font-weight: bold">University
+							of Ottawa</span> working towards my undergraduate for <span
+							style="font-weight: bold">Bachelor's
+							of Applied Sciences</span> in <span style="font-weight: bold">Software
+							Engineering</span>. </p>
+					<p>As part of my <span style="font-weight: bold">Mandatory Co-op</span> I have
 						previously worked for CIBC and Global Affairs Canada.
-						I participated in a coop placement during Fall 2019 at <a
-							href="https://www.microfocus.com/"><span
-								style="color: rgb(0, 118, 223); font-weight: bold">Micro Focus</span></a> between
-						September - December 2019. For my current coop term, from May - August 2020, I will be returning to Micro Focus as a Cloud Engineer.
+						I participated in a coop placement during Fall 2019 at <span style="font-weight: bold">Micro
+							Focus</span> between
+						September - December 2019 and returned from May - August 2020 as a Cloud Engineer.
 					</p>
-					<p>I am interested in <span style="color: blue; font-weight: bold">AI</span>, <span
-							style="color: blue; font-weight: bold">Machine Learning</span> and <span
-							style="color: blue; font-weight: bold">Cybersecurity</span>. However, I enjoy learning new
+					<p>I am interested in <span style="font-weight: bold">AI/ML</span>, <span
+							style="font-weight: bold">Cloud</span> and <span
+							style="font-weight: bold">Cybersecurity</span>. However, I enjoy learning new
 						technologies to enhance my knowledge.
 					</p>
 					<p>In my spare time, I am a vivid reader, sports enthusiast and a geek of a multitude of TV shows.
@@ -91,7 +108,7 @@
 		<!--Skills-->
 		<div id="skills" class="container-fluid bg-dark align-content-center"
 			style="padding: 5%; width: auto; position: relative;">
-			<h3 class="skills-component" data-aos="slide-up">Skills</h3>
+			<h3 class="section-title-light" data-aos="slide-up">Skills</h3>
 			<div class="row">
 				<div class="col"><img style="border: 2px solid yellow;"
 						src="https://img.icons8.com/color/96/000000/python.png" data-aos="slide-up"
@@ -128,71 +145,56 @@
 						src="https://img.icons8.com/color/96/000000/css3.png" data-aos="slide-up"
 						data-aos-once="true"><br>CSS</div>
 			</div>
-			<div class="row" style="border-top: 2px solid lime; margin: 10px 35px;"></div>
-			<div class="row">
-				<div class="col bg-dark">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">XML
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Git
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							MS SQL
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Hue</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Jenkins
-						</li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Django
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Android Development
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Android
-							Studio
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">Linux
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Beeline
-						</li>
-					</ul>
-				</div>
-				<div class="col">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Bash
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Tableau
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Firebase
-						</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Artifactory</li>
-						<li class="list-group-item list-group-item-dark" data-aos="slide-up" data-aos-once="true">
-							Powershell
-						</li>
-					</ul>
-				</div>
-			</div>
+
 		</div>
 
 		<!--Experience-->
 		<div id="experience" class="container-fluid bg-light"
 			style="padding-top: 5%; padding-bottom: 5%; height: 100%; width: auto; height: 100%; position: relative;">
-			<h3 class="exp-component" data-aos="slide-up">Experience</h3>
-			<div class="row">
-				<div class="col-md-12">
+			<h3 class="section-title-dark" data-aos="slide-up">Experience</h3>
+			<!--Mobile-->
+			<div class="show-mobile" style="text-align: center;">
+				<div class="col" style="padding: 2%;">
+					<a href="https://www.microfocus.com/" style="color: blue; ">
+						<img class="icon-mobile" src="images/microfocus.jpg" data-aos="slide-up"
+							data-aos-once="true"><br> Micro Focus
+					</a> <span style="color: gray; font-size: 12px;"><br> Cloud Engineer | Summer Coop 2020 <br> Software Engineer | Fall Coop 2019 </span>
+				</div>
+				<div class="col" style="padding: 2%;">
+					<a href="https://www.uottahack.ca/" style="color: darkred;">
+						<img class="icon-mobile" src="images/uottahack.png" data-aos="slide-up"
+							data-aos-once="true"><br> uOttaHack
+					</a> <span style="color: gray; font-size: 12px;"><br> Medicine Home Devliery App | February 2020 <br> AR Colour Identifier | February 2019 </span>
+				</div>
+				<div class="col" style="padding: 2%;">
+					<a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/" style="color: green; ">
+						<img class="icon-mobile" src="images/google.jpg" data-aos="slide-up" data-aos-once="true"><br>
+						Google
+					</a> <span style="color: gray; font-size: 12px;"><br> Tech Challenge | Placed Top 3 <br>September
+						2019 </span>
+				</div>
+				<div class="col" style="padding: 2%; ">
+					<a href="https://www.international.gc.ca/gac-amc/index.aspx" style="color: black;">
+						<img class="icon-mobile" src="images/gac.jpeg" data-aos="slide-up" data-aos-once="true"><br>GAC
+					</a>
+					<span style="color: gray; font-size: 12px;"> <br>IT Security Specialist | Winter Coop 2019 </span>
+				</div>
+				<div class="col" style="padding: 2%;">
+					<a href="https://www.cibc.com/" style="color: red;"><img class="icon-mobile" src="images/cibc.png"
+							data-aos="slide-up" data-aos-once="true"><br>CIBC
+					</a>
+					<span style="color: gray; font-size: 12px;"> <br> Application Developer | Summer Coop 2018 </span>
+				</div>
+				<div class="col" style="padding: 2%;">
+					<a href="https://www.lifelabs.com/" style="color: orange;"><img class="icon-mobile"
+							src="images/lifelabs.jpg" data-aos="slide-up" data-aos-once="true"><br>LifeLabs
+					</a>
+					<span style="color: gray; font-size: 12px;"> <br> Data Validation Intern | Part-Time Fall 2017 </span>
+				</div>
+			</div>
+			<!--Web-->
+			<div class="row hide-mobile">
+				<div class="col-md-12 hide-mobile">
 					<div class="main-timeline">
 						<a href="https://www.microfocus.com/" class="timeline"
 							style="background-color: rgba(0, 0, 0, 0); color:  rgba(0, 0, 0, 0); opacity: 0.99;">
@@ -201,22 +203,28 @@
 								<h3 class="title" data-aos="fade-left" data-aos-once="true">Micro Focus</h3>
 								<p class="description" data-aos="fade-left" data-aos-once="true">
 									<b>Cloud Engineer, Kanata (Ottawa), Summer 2020 Co-op</b><br />
-									I returned to Micro Focus as a Cloud Engineer Coop at MicroFocus in the Cloud
-									Operations team.
-									This location works on a security analytics software called Interset.
-									My job focuses data collection & analysis, cost measures and building an API for
-									cost reduction & optimization while using AWS and other cloud services.
+									I returned to Micro Focus as a Cloud Engineer Coop at MicroFocus in the
+									Cloud
+									Operations team. This location works on a security analytics software called
+									Interset.
+									My job focused on cloud infrastructure development using AWS to add cloud
+									capabilities for
+									Interset and updating Elastic API for cost optimization & improved data
+									collection
+									purposes.
 								</p>
 							</div>
 						</a>
-						<a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/" class="timeline">
+						<a href="https://uottahack.ca/" class="timeline">
 							<div class="timeline-icon"><img class="icon" src="images/uottahack.png"></div>
 							<div class="timeline-content">
 								<h3 class="title" data-aos="fade-right" data-aos-once="true">uOttaHack</h3>
 								<p class="description" data-aos="fade-right" data-aos-once="true">
 									<b>Ottawa, February 2020</b><br />
-									I participated in the largest hackathon in Ottawa held at the University of Ottawa
-									over two days. In a team of three, I worked on an application that works as an Uber
+									I participated in the largest hackathon in Ottawa held at the University of
+									Ottawa
+									over two days. In a team of three, I worked on an application that works as
+									an Uber
 									Eats for medications.
 								</p>
 							</div>
@@ -229,8 +237,10 @@
 								<p class="description" data-aos="fade-left" data-aos-once="true">
 									<b>Software Engineer, Kanata (Ottawa), Fall 2019 Co-op</b><br />
 									I worked as a software engineer at MicroFocus in the Data Integration &
-									Platform team. This location works on a security analytics software called Interset.
-									My job focused on updating the Interset installer that the customers would use to
+									Platform team. This location works on a security analytics software called
+									Interset.
+									My job focused on updating the Interset installer that the customers would
+									use to
 									install the product. I had the opportunity to work on the back end while
 									integrating applications such as Ambari, Cloudera and Nifi with the product
 									installation.
@@ -240,14 +250,19 @@
 						<a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/" class="timeline">
 							<div class="timeline-icon"><img class="icon" src="images/google.jpg"></div>
 							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-right" data-aos-once="true">Google Tech Challenge (Top
+								<h3 class="title" data-aos="fade-right" data-aos-once="true">Google Tech
+									Challenge (Top
 									3)</h3>
 								<p class="description" data-aos="fade-right" data-aos-once="true">
 									<b>Ottawa, September 2019</b><br />
-									A tech challenge was held during Google's visit to the University of Ottawa. My team
-									of three participated in the competition that required technical thinking and swift
-									programming abilities to problem solve and work through the different stages of the
-									multiple challenges. At the end of the competition, we ranked as one of the Top 3
+									A tech challenge was held during Google's visit to the University of Ottawa.
+									My team
+									of three participated in the competition that required technical thinking
+									and swift
+									programming abilities to problem solve and work through the different stages
+									of the
+									multiple challenges. At the end of the competition, we ranked as one of the
+									Top 3
 									teams.
 								</p>
 							</div>
@@ -258,10 +273,13 @@
 								<h3 class="title" data-aos="fade-right" data-aos-once="true">uOttaHack</h3>
 								<p class="description" data-aos="fade-right" data-aos-once="true">
 									<b>Ottawa, February 2019</b><br />
-									I participated in the largest hackathon in Ottawa held at the University of Ottawa
-									over two days. In a team of three, I worked on an Augmented Reality application that
+									I participated in the largest hackathon in Ottawa held at the University of
+									Ottawa
+									over two days. In a team of three, I worked on an Augmented Reality
+									application that
 									integrated Java and JavaScript code to detect and
-									identify colours that would initiate in-built sequences used primarily for the
+									identify colours that would initiate in-built sequences used primarily for
+									the
 									amusement of
 									the user.
 								</p>
@@ -270,12 +288,15 @@
 						<a href="https://www.international.gc.ca/gac-amc/index.aspx" class="timeline">
 							<div class="timeline-icon"><img class="icon" src="images/gac.jpeg"></div>
 							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-right" data-aos-once="true">Global Affairs Canada</h3>
+								<h3 class="title" data-aos="fade-right" data-aos-once="true">Global Affairs
+									Canada</h3>
 								<p class="description" data-aos="fade-right" data-aos-once="true">
 									<b>IT Security Specialist, Ottawa, Winter 2019 Co-op</b><br />
-									During my time at GAC, I got to work independently in a small team focusing on
+									During my time at GAC, I got to work independently in a small team focusing
+									on
 									gathering
-									data metrics and using data warehousing priciples to store them including the
+									data metrics and using data warehousing priciples to store them including
+									the
 									extract,
 									transform, load (ETL) process.
 								</p>
@@ -287,9 +308,11 @@
 								<h3 class="title" data-aos="fade-left" data-aos-once="true">CIBC</h3>
 								<p class="description" data-aos="fade-left" data-aos-once="true">
 									<b>Application Developer, Toronto, Summer 2018 Co-op</b><br />
-									Working at CIBC for my 1st co-op term helped me develop my Python development skills
+									Working at CIBC for my 1st co-op term helped me develop my Python
+									development skills
 									and
-									introduced me to the world of big data. I was also responsible for acting as the
+									introduced me to the world of big data. I was also responsible for acting as
+									the
 									system
 									admin
 									as a part of the small DevOps team in the Data Hub department.
@@ -304,8 +327,10 @@
 								</h3>
 								<p class="description" data-aos="fade-right" data-aos-once="true" data-aos-offset="50">
 									<b>Data Validation Intern, Remote, Sept - Dec 2019 Part-time</b>
-									My first job gave me insight into the Agile environment and running sprints while
-									testing the SalesForce web-app for use LifeLabs. I also developed a Java program to
+									My first job gave me insight into the Agile environment and running sprints
+									while
+									testing the SalesForce web-app for use LifeLabs. I also developed a Java
+									program to
 									extract, cross-reference and create excel files.
 								</p>
 							</div>
@@ -318,7 +343,7 @@
 		<!--Contact-->
 		<div id="contact" class="container-fluid bg-secondary align-content-center"
 			style="height: 100%; padding-top: 5%; padding-bottom: 5%; width: 100%; position: relative;">
-			<h3 class="contact-component" data-aos="slide-up">My Links</h3>
+			<h3 class="section-title-light" data-aos="slide-up">My Links</h3>
 			<div class="row">
 				<div class="col" style="text-align: right;"><a href="https://www.linkedin.com/in/haardtrivedi/"><img
 							src="https://img.icons8.com/color/150/000000/linkedin.png"
