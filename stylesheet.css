@@ -430,7 +430,8 @@ button {
 }
 
 .img-project:hover {
-    opacity: 0.3;
+    color: rgb(2, 182, 253);
+    opacity: 0.5;
 }
 
 .project-tech {
