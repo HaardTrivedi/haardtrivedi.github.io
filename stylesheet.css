@@ -546,10 +546,10 @@ button {
 .main-timeline .timeline:before {
     content: "";
     width: 3.6%;
-    height: 25%;
+    height: 27.5%;
     border-radius: 50%;
     border: 4px solid #fff;
-    background: blue;
+    background: darkorange;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -562,7 +562,7 @@ button {
     width: 12%;
     height: 90%;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid darkorange;
     padding: 13px;
     text-align: center;
     position: absolute;
@@ -574,7 +574,7 @@ button {
 .main-timeline .timeline-icon i {
     display: block;
     border-radius: 50%;
-    background: blue;
+    background: darkorange;
     font-size: 64px;
     color: #fff;
     line-height: 100px;
@@ -586,7 +586,7 @@ button {
     content: "";
     width: 110px;
     height: 4px;
-    background: blue;
+    background: darkorange;
     position: absolute;
     top: 50%;
     right: -110px;
@@ -614,7 +614,7 @@ button {
     content: "";
     width: 80%;
     height: 90%;
-    border: 3px solid blue;
+    border: 3px solid darkorange;
     border-top: none;
     border-right: none;
     position: absolute;
@@ -626,7 +626,7 @@ button {
     content: "";
     width: 37px;
     height: 3px;
-    background: blue;
+    background: darkorange;
     position: absolute;
     top: 27.5%;
     left: 0
@@ -635,7 +635,7 @@ button {
 .main-timeline .title {
     font-size: 20px;
     font-weight: 600;
-    color: blue;
+    color: darkorange;
     text-transform: uppercase;
     margin: 0 0 5px
 }
@@ -692,128 +692,146 @@ button {
     right: 0
 }
 
-.main-timeline .timeline:nth-child(2) .timeline-content:after, .main-timeline .timeline:nth-child(2) .timeline-icon i, .main-timeline .timeline:nth-child(2) .timeline-icon:before, .main-timeline .timeline:nth-child(2):before {
-    background: darkred
-}
-
-.main-timeline .timeline:nth-child(2) .timeline-icon {
-    height: 100%;
-    border-color: darkred
-}
-
-.main-timeline .timeline:nth-child(2) .title {
-    color: darkred
-}
-
-.main-timeline .timeline:nth-child(2) .timeline-content:before {
-    border-left-color: darkred;
-    border-bottom-color: darkred
-}
-
-.main-timeline .timeline:nth-child(3) .timeline-content:after, .main-timeline .timeline:nth-child(3) .timeline-icon i, .main-timeline .timeline:nth-child(3) .timeline-icon:before, .main-timeline .timeline:nth-child(3):before {
+.main-timeline .timeline:nth-child(2) .timeline-content:after, .main-timeline .timeline:nth-child(3) .timeline-icon i, .main-timeline .timeline:nth-child(2) .timeline-icon:before, .main-timeline .timeline:nth-child(2):before {
     background: blue
 }
 
-.main-timeline .timeline:nth-child(3) .timeline-icon {
-    height: 70%;
+.main-timeline .timeline:nth-child(2) .timeline-icon {
+    height: 80%;
     border-color: blue
 }
 
-.main-timeline .timeline:nth-child(3) .title {
+.main-timeline .timeline:nth-child(2) .title {
     color: blue
 }
 
-.main-timeline .timeline:nth-child(3) .timeline-content:before {
+.main-timeline .timeline:nth-child(2) .timeline-content:before {
     border-left-color: blue;
     border-bottom-color: blue
 }
 
-.main-timeline .timeline:nth-child(4) .timeline-content:after, .main-timeline .timeline:nth-child(4) .timeline-icon i, .main-timeline .timeline:nth-child(4) .timeline-icon:before, .main-timeline .timeline:nth-child(4):before {
-    background: green
+.main-timeline .timeline:nth-child(3) .timeline-content:after, .main-timeline .timeline:nth-child(2) .timeline-icon i, .main-timeline .timeline:nth-child(3) .timeline-icon:before, .main-timeline .timeline:nth-child(3):before {
+    background: purple
+}
+
+.main-timeline .timeline:nth-child(3) .timeline-icon {
+    height: 100%;
+    border-color: purple
+}
+
+.main-timeline .timeline:nth-child(3) .title {
+    color: purple
+}
+
+.main-timeline .timeline:nth-child(3) .timeline-content:before {
+    border-left-color: purple;
+    border-bottom-color: purple
+}
+
+.main-timeline .timeline:nth-child(4) .timeline-content:after, .main-timeline .timeline:nth-child(3) .timeline-icon i, .main-timeline .timeline:nth-child(4) .timeline-icon:before, .main-timeline .timeline:nth-child(4):before {
+    background: blue
 }
 
 .main-timeline .timeline:nth-child(4) .timeline-icon {
-    height: 80%;
-    border-color: green
+    height: 90%;
+    border-color: blue
 }
 
 .main-timeline .timeline:nth-child(4) .title {
-    color: green
+    color: blue
 }
 
 .main-timeline .timeline:nth-child(4) .timeline-content:before {
-    border-left-color: green;
-    border-bottom-color: green
+    border-left-color: blue;
+    border-bottom-color: blue
 }
 
-.main-timeline .timeline:nth-child(5) .timeline-content:after, .main-timeline .timeline:nth-child(5) .timeline-icon i, .main-timeline .timeline:nth-child(5) .timeline-icon:before, .main-timeline .timeline:nth-child(5):before {
-    background: darkred
+.main-timeline .timeline:nth-child(5) .timeline-content:after, .main-timeline .timeline:nth-child(4) .timeline-icon i, .main-timeline .timeline:nth-child(5) .timeline-icon:before, .main-timeline .timeline:nth-child(5):before {
+    background: green
 }
 
 .main-timeline .timeline:nth-child(5) .timeline-icon {
     height: 80%;
-    border-color: darkred
+    border-color: green
 }
 
 .main-timeline .timeline:nth-child(5) .title {
-    color: darkred
+    color: green
 }
 
 .main-timeline .timeline:nth-child(5) .timeline-content:before {
+    border-left-color: green;
+    border-bottom-color: green
+}
+
+.main-timeline .timeline:nth-child(6) .timeline-content:after, .main-timeline .timeline:nth-child(5) .timeline-icon i, .main-timeline .timeline:nth-child(6) .timeline-icon:before, .main-timeline .timeline:nth-child(6):before {
+    background: darkred
+}
+
+.main-timeline .timeline:nth-child(6) .timeline-icon {
+    height: 80%;
+    border-color: darkred
+}
+
+.main-timeline .timeline:nth-child(6) .title {
+    color: darkred
+}
+
+.main-timeline .timeline:nth-child(6) .timeline-content:before {
     border-left-color: darkred;
     border-bottom-color: darkred
 }
 
-.main-timeline .timeline:nth-child(6) .timeline-content:after, .main-timeline .timeline:nth-child(6) .timeline-icon i, .main-timeline .timeline:nth-child(6) .timeline-icon:before, .main-timeline .timeline:nth-child(6):before {
+.main-timeline .timeline:nth-child(7) .timeline-content:after, .main-timeline .timeline:nth-child(6) .timeline-icon i, .main-timeline .timeline:nth-child(7) .timeline-icon:before, .main-timeline .timeline:nth-child(7):before {
     background: black
 }
 
-.main-timeline .timeline:nth-child(6) .timeline-icon {
+.main-timeline .timeline:nth-child(7) .timeline-icon {
     height: 85%;
     border-color: black
 }
 
-.main-timeline .timeline:nth-child(6) .title {
+.main-timeline .timeline:nth-child(7) .title {
     color: black
 }
 
-.main-timeline .timeline:nth-child(6) .timeline-content:before {
+.main-timeline .timeline:nth-child(7) .timeline-content:before {
     border-left-color: black;
     border-bottom-color: black
 }
 
-.main-timeline .timeline:nth-child(7) .timeline-content:after, .main-timeline .timeline:nth-child(7) .timeline-icon i, .main-timeline .timeline:nth-child(7) .timeline-icon:before, .main-timeline .timeline:nth-child(7):before {
+.main-timeline .timeline:nth-child(8) .timeline-content:after, .main-timeline .timeline:nth-child(7) .timeline-icon i, .main-timeline .timeline:nth-child(8) .timeline-icon:before, .main-timeline .timeline:nth-child(8):before {
     background: red
 }
 
-.main-timeline .timeline:nth-child(7) .timeline-icon {
+.main-timeline .timeline:nth-child(8) .timeline-icon {
     height: 90%;
     border-color: red
 }
 
-.main-timeline .timeline:nth-child(7) .title {
+.main-timeline .timeline:nth-child(8) .title {
     color: red
 }
 
-.main-timeline .timeline:nth-child(7) .timeline-content:before {
+.main-timeline .timeline:nth-child(8) .timeline-content:before {
     border-left-color: red;
     border-bottom-color: red
 }
 
-.main-timeline .timeline:nth-child(8) .timeline-content:after, .main-timeline .timeline:nth-child(8) .timeline-icon i, .main-timeline .timeline:nth-child(8) .timeline-icon:before, .main-timeline .timeline:nth-child(8):before {
+.main-timeline .timeline:nth-child(9) .timeline-content:after, .main-timeline .timeline:nth-child(8) .timeline-icon i, .main-timeline .timeline:nth-child(9) .timeline-icon:before, .main-timeline .timeline:nth-child(9):before {
     background: darkorange
 }
 
-.main-timeline .timeline:nth-child(8) .timeline-icon {
+.main-timeline .timeline:nth-child(9) .timeline-icon {
     height: 100%;
     border-color: darkorange
 }
 
-.main-timeline .timeline:nth-child(8) .title {
+.main-timeline .timeline:nth-child(9) .title {
     color: darkorange
 }
 
-.main-timeline .timeline:nth-child(8) .timeline-content:before {
+.main-timeline .timeline:nth-child(9) .timeline-content:before {
     border-left-color: darkorange;
     border-bottom-color: darkorange
 }
