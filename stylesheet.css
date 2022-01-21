@@ -545,8 +545,8 @@ button {
 
 .main-timeline .timeline:before {
     content: "";
-    width: 3.6%;
-    height: 27.5%;
+    width: 4%;
+    height: 20%;
     border-radius: 50%;
     border: 4px solid #fff;
     background: darkorange;
@@ -560,7 +560,7 @@ button {
 .main-timeline .timeline-icon {
     display: inline-block;
     width: 12%;
-    height: 90%;
+    height: 55%;
     border-radius: 50%;
     border: 3px solid darkorange;
     padding: 13px;
@@ -613,7 +613,7 @@ button {
 .main-timeline .timeline-content:before {
     content: "";
     width: 80%;
-    height: 90%;
+    height: 80%;
     border: 3px solid darkorange;
     border-top: none;
     border-right: none;
