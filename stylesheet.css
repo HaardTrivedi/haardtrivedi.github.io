@@ -42,11 +42,11 @@ body {
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
-    margin: 0 auto;
+    margin: 0;
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
     /* Adjust as needed */
-    animation: typing 3.5s steps(40, end), blink-caret 1.25s step-end;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end;
 }
 
 .cursor-anim {
@@ -55,7 +55,7 @@ body {
 
 @keyframes typing {
     from {
-        width: 0
+        width: 0%;
     }
     to {
         width: 100%
@@ -66,10 +66,10 @@ body {
 
 @keyframes blink-caret {
     from, to {
-        border-color: transparent
+        border-color: transparent;
     }
-    0% {
-        border-color: whitesmoke;
+    25%, 50%, 75% {
+        border-color: black;
     }
 }
 
@@ -141,6 +141,14 @@ body {
     align-self: center;
     text-align: center;
     color: red;
+}
+
+.about {
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    margin: 1%;
+    height: fit-content;
+    padding: 1%;
 }
 
 /* .about-component::before {
@@ -288,6 +296,10 @@ p {
     font-size: 100px;
 }
 
+li {
+    margin-top: 1%;
+}
+
 h3 {
     margin-left: 35px;
     margin-bottom: 25px;
@@ -303,20 +315,11 @@ h3 {
     align-content: center;
 }
 
-ul {
-    margin: 5%;
-    font-size: 20px
-}
-
-li {
-    margin: 5%;
-}
-
 .row {
     margin-top: 10px;
     margin-bottom: 15px;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -326,12 +329,23 @@ li {
 }
 
 .icon {
-    height: 70%;
-    width: 70%;
+    height: 20%;
+    width: 20%;
     z-index: 1;
     position: relative;
     align-self: right;
+    border-radius: 30%;
     top: 15%;
+}
+
+.icon-company {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    align-self: left;
+    border-radius: 30%;
+    vertical-align: top;
 }
 
 .icon-mobile {
@@ -395,6 +409,7 @@ button {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(0, 0, 0, 0);
     opacity: 0.99;
+    border-radius: 10px;
 }
 
 .icons8-amazon-web-services {
@@ -415,11 +430,13 @@ button {
 .img-project-landscape {
     height: 50%;
     width: 50%;
+    border-radius: 10px;
 }
 
 .img-project-portrait {
     height: 216px;
     width: 126px;
+    border-radius: 10px;
 }
 
 .img-project {
@@ -427,6 +444,7 @@ button {
     backface-visibility: visible;
     opacity: 1;
     color: white;
+    border-radius: 10px;
 }
 
 .img-project:hover {
@@ -457,6 +475,23 @@ button {
     color: white;
     font-size: 16px;
 }
+
+.hilights {
+    list-style-type: circle;
+}
+
+.company {
+    border-radius: 30px;
+    margin: 1%;
+    padding: 2%;
+    background-color: lightgrey;
+    align-content: flex-start;
+}
+
+.company:hover {
+    background-color: #c5c5c5;
+}
+
 
 @media screen and (max-width:768px) {
     /* CSS for screens that are 768 pixels or less will be put in this section */
@@ -521,6 +556,7 @@ button {
     align-self: center;
     text-align: left;
     align-content: center;
+    padding-left: 6%;
 }
 
 .main-timeline:before {
@@ -528,12 +564,21 @@ button {
     width: 5px;
     height: 100%;
     border-radius: 20px;
-    margin: 0 auto;
-    background: #242922;
+    margin-left: 3%;
+    background: black;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0
+    right: 0;
+}
+
+.main-timeline:after {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.99;
+    width: 4%;
+    height: 15%;
+    border-radius: 100px;
 }
 
 .main-timeline .timeline {
@@ -546,13 +591,13 @@ button {
 .main-timeline .timeline:before {
     content: "";
     width: 4%;
-    height: 20%;
-    border-radius: 50%;
+    height: 15%;
+    border-radius: 100px;
     border: 4px solid #fff;
     background: darkorange;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0%;
     z-index: 1;
     transform: translate(-50%, -50%)
 }
@@ -596,7 +641,7 @@ button {
 .main-timeline .timeline-icon:after {
     width: 70px;
     height: 50px;
-    background: rgba(0, 0, 0, 0);
+    background: black;
     top: 89px;
     right: -30px;
     opacity: 0.99;
@@ -632,6 +677,15 @@ button {
     left: 0
 }
 
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: darkorange;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    text-align: left;
+}
+
 .main-timeline .title {
     font-size: 20px;
     font-weight: 600;
@@ -640,13 +694,29 @@ button {
     margin: 0 0 5px
 }
 
-.main-timeline .description {
+.description {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     color: #404040;
     line-height: 20px;
     letter-spacing: 1px;
-    margin: 0
+    margin: 0;
+    text-align: left;
+    list-style-type: circle;
+    padding: auto;
+}
+
+li {
+    padding: 0%;
+}
+
+.main-timeline {
+    display: inline-block;
+    font-size: 16px;
+    color: lightgrey;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 0;
 }
 
 .main-timeline .timeline:nth-child(n+2)::before {

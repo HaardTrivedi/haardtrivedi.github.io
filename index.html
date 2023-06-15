@@ -27,30 +27,36 @@
 <body>
 	<div style="overflow: hidden;">
 		<div class="hide-mobile">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-				<a class="navbar-brand" href="#"><img src="./images/orange_fore.png" width="30" height="30"
-						alt="" /></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
+			<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+					<div class="col-md-0" style="text-align: left;">
+						<h1 class="hide-mobile typewriter" style="text-align: left;">Haard Trivedi <span
+								class="cursor-anim">|</span></h1>
+					</div>
+					<!-- <a class="navbar-brand" href="#"><img src="./images/orange_fore.png" width="30" height="30"
+						alt="" /></a> -->
+					<!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link mx-lg-4" href="#about">About Me</a>
-						<a class="nav-item nav-link mx-lg-4" href="#skills">Skills</a>
-						<a class="nav-item nav-link mx-lg-4" href="#experience">Experience</a>
-						<a class="nav-item nav-link mx-lg-4" href="#projects">Projects</a>
-						<a class="nav-item nav-link mx-lg-4" href="#contact">Contact Me</a>
-						<a class="nav-item nav-button mx-lg-4" href="./Haard Trivedi Resume.pdf"
-							download="Haard Trivedi Resume">
-							<button class="btn btn-outline-dark mx-lg-4">
-								Resume &darr;
-							</button>
-						</a>
+				</button> -->
+					<div class="collapse navbar-collapse" style="align-self: self-end;">
+						<div class="navbar-nav">
+							<a class="nav-item nav-link mx-lg-4" href="#about">About Me</a>
+							<a class="nav-item nav-link mx-lg-4" href="#skills">Skills</a>
+							<a class="nav-item nav-link mx-lg-4" href="#experience">Experience</a>
+							<a class="nav-item nav-link mx-lg-4" href="#projects">Projects</a>
+							<a class="nav-item nav-link mx-lg-4" href="#contact">Contact Me</a>
+							<a class="nav-item nav-button mx-lg-4" href="./Haard Trivedi Resume.pdf"
+								download="Haard Trivedi Resume">
+								<button class="btn btn-outline-dark mx-lg-4">
+									Resume &darr;
+								</button>
+							</a>
+						</div>
 					</div>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		</div>
 
 		<div class="show-mobile">
@@ -75,12 +81,18 @@
 		</div>
 
 		<div class="welcome bg-dark align-content-center">
-			<p class="welcome-subtitle" data-aos="slide-down" data-aos-offset="0" data-aos-once="true">Hi, My Name is
+			<p class="welcome-subtitle hide-mobile" data-aos="slide-down" data-aos-offset="0" data-aos-once="true">Hello
+				There!
 			</p>
-			<h1 class="welcome-component hide-mobile typewriter">Haard Trivedi <span class="cursor-anim">|</span></h1>
-			<h1 class="welcome-component-mobile show-mobile">Haard Trivedi<span class="cursor-anim">|</span></h1>
-			<div style="margin: 5%;" data-aos="zoom-in" data-aos-offset="0"><img src="./images/programmer.gif"
-					style="height: 35%; width: 35%;"></div>
+			<p class="welcome-subtitle show-mobile" data-aos="slide-down" data-aos-offset="0" data-aos-once="true">
+				<br /><br />Hi, my name is<br />
+			</p>
+			<h1 class="welcome-component hide-mobile">Welcome to my page</h1>
+			<h1 class="welcome-component-mobile show-mobile">Haard Trivedi<span class="cursor-anim">|</span><br />
+				<br />
+			</h1>
+			<!-- <div style="margin: 5%;" data-aos="zoom-in" data-aos-offset="0"><img src="./images/programmer.gif"
+					style="height: 35%; width: 35%;"></div> -->
 			<a style="color: white; height: 10%;" href="./Haard Trivedi Resume.pdf"
 				download="Haard Trivedi Resume"><button type="button" class="btn resume-btn btn-light btn-lg"
 					data-aos="zoom-out" data-aos-once="true"><img
@@ -92,45 +104,79 @@
 			style="padding-left: 5%; padding-top: 5%; padding-bottom: 5%; padding-right: 5%; width: auto; position: relative;">
 			<h3 class="section-title-dark" data-aos="slide-up" data-aos-once="true">Get to Know Me</h3>
 			<div class="row">
-				<div class="col-md-4"><img src="./images/profile_pic.png" class="profile-pic" data-aos="fade-right"
-						data-aos-once="true"></div>
-				<div class="col-md-8" style="text-align: justify;" data-aos="fade-left" data-aos-once="true">
-					<h5>Hello there, welcome to my page!<br></h5>
-					<h6><br>Current Role</h6>
-					<p><b style="color: orange;">Amazon Web Services</b> <br>
-						Cloud Infrastructure Engineer <br>
-						Professional Services, Shared Delivery Team
-					</p>
-					<h6><br>Education</h6>
-					<p><b style="color: maroon;">University of Ottawa</b> <br>
-						Bachelor of Applied Science Software Engineering (Co-op) <br>
-						Business Management & Entrepreneurship Option
-					</p>
+				<div class="col-md-4"><img style="border-radius: 10px;" src="./images/programmer.gif"
+						class="profile-pic" data-aos="fade-right" data-aos-once="true"></div>
+				<div class="col-md-8" style="text-align: left;" data-aos="fade-left" data-aos-once="true">
+					<!-- <h5>Hello there, welcome to my page!<br></h5> -->
+					<div class="row about">
+						<div class="col-md-6">
+							<h6><br>Current Role</h6>
+							<p class="description"><b style="color: darkorange;">Amazon Web Services</b> <br>
+								<b>Cloud Infrastructure Engineer</b> <br>
+								Professional Services, Shared Delivery Team
+							</p>
+						</div>
+						<div class="col-md">
+							<h6><br>Education</h6>
+							<p class="description"><b style="color: maroon;">University of Ottawa</b> <br>
+								<b>BASc. Software Engineering</b> <br>
+								Business Management & Entrepreneurship Option <br>
+								Mandatory Coop <br>
+								Magna cum Laude
 
-					<h6><br>Capstone Project</h6>
-					<p><b>Wellness Hub Mobile Application</b> <br>
-						Available on the <a
-							href="https://play.google.com/store/apps/details?id=com.wellnessmobile.wellnessapp"><span
-								style="color: darkblue;">Google Play Store</span></a>
-					</p>
+							</p>
+						</div>
+					</div>
+					<div class="row about">
+						<div class="col-md-6">
+							<h6><br>Project</h6>
+							<p class="description"><b style="color: orangered;">Wellness Hub Mobile Application</b> <br>
+								Available on the <a
+									href="https://play.google.com/store/apps/details?id=com.wellnessmobile.wellnessapp"><span
+										style="color: darkblue;">Google Play Store</span></a>
+							</p>
+						</div>
+						<div class="col-md">
+							<h6><br>Certifications</h6>
+							<!--Mobile-->
+							<div class="show-mobile">
+								<p>
+									<img src="images/ccp.png" style=" width: 50px; height: 50px;" />
+									<img src="images/saa.png" style=" width: 50px; height: 50px;" />
+									<img src="images/wap.png" style=" width: 50px; height: 50px;" />
+									<img src="images/techu.png" style=" width: 50px; height: 50px;" />
+								</p>
+							</div>
+							<!--Web-->
 
-					<h6><br>Certifications</h6>
-					<p>
-						<img src="images/ccp.png" style=" width: 100px; height: 100px;" />
-						<img src="images/saa.png" style=" width: 100px; height: 100px;" />
-					</p>
+							<div class="hide-mobile">
+								<p>
+									<img src="images/ccp.png" style=" width: 75px; height: 75px;" />
+									<img src="images/saa.png" style=" width: 75px; height: 75px;" />
+									<img src="images/wap.png" style=" width: 75px; height: 75px;" />
+									<img src="images/techu.png" style=" width: 75px; height: 75px;" />
+								</p>
+							</div>
+						</div>
+					</div>
 
-					<h6><br>Languages</h6>
-					<p>English | French | Gujarati | Hindi</p>
-
-					<h6><br>Interests</h6>
-					<p>I like to read, watch too many TV shows and enjoy watching sports (hockey and cricket
-						mainly)</p>
-
-					<h5><br>
-						If you would like to get to know me further, please feel free to <a href="#contact"><span
+					<div class="row about">
+						<div class="col-md-6">
+							<h6><br>Languages</h6>
+							<p class="description">English | French | Gujarati | Hindi</p>
+						</div>
+						<div class="col-md-6">
+							<h6><br>Interests</h6>
+							<p class="description">I like to read, watch too many TV shows and enjoy watching sports
+								(hockey and
+								cricket
+								mainly).</p>
+						</div>
+					</div>
+					<h6><br><br>
+						If you would like to get to know me better, please feel free to <a href="#contact"><span
 								style="color: darkblue;">connect with me</span></a>.
-					</h5>
+					</h6>
 				</div>
 			</div>
 		</div>
@@ -143,54 +189,54 @@
 			<!--Mobile-->
 			<div class="show-mobile">
 				<div class="row">
-					<div class="col"><img class="icon-mobile" style="border: 2px solid orange;"
+					<div class="col"><img class="icon-mobile" style="border: 2px solid orange; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/python.png" data-aos="slide-up"
 							data-aos-once="true"><br>Python</img></div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid orange;"
+							style="border: 2px solid orange; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" data-aos="slide-up"
 							data-aos-once="true"><br>Java</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid orange;"
+							style="border: 2px solid orange; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/javascript.png" data-aos="slide-up"
 							data-aos-once="true"><br>JavaScript</div>
 				</div>
 				<div class="row">
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid red;" src="https://img.icons8.com/color/96/000000/react-native.png"
+							style="border: 2px solid red; border-radius: 10px;" src="https://img.icons8.com/color/96/000000/react-native.png"
 							data-aos="slide-up" data-aos-once="true"><br>React Native</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid red;" src="https://img.icons8.com/color/96/000000/nodejs.png"
+							style="border: 2px solid red; border-radius: 10px;" src="https://img.icons8.com/color/96/000000/nodejs.png"
 							data-aos="slide-up" data-aos-once="true"><br>Node.js</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid red;"
+							style="border: 2px solid red; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/c-programming.png" data-aos="slide-up"
 							data-aos-once="true"><br>C</div>
 				</div>
 				<div class="row">
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							class="icon-mobile" style="border: 2px solid black; background-color: white;"
+							class="icon-mobile" style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/amazon-web-services.png" data-aos="slide-up"
 							data-aos-once="true"><br>AWS</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							class="icon-mobile" style="border: 2px solid black; background-color: white;"
+							class="icon-mobile" style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/ios/96/000000/machine-learning.png" data-aos="slide-up"
 							data-aos-once="true"><br>ML</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							class="icon-mobile" style="border: 2px solid black; background-color: white;"
+							class="icon-mobile" style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/external-outline-juicy-fish/96/null/external-dev-coding-and-development-outline-outline-juicy-fish.png"
 							data-aos="slide-up" data-aos-once="true"><br>DevOps</div>
 				</div>
 				<div class="row">
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid white;" src="https://img.icons8.com/dusk/96/000000/combo-chart.png"
+							style="border: 2px solid white; border-radius: 10px;" src="https://img.icons8.com/dusk/96/000000/combo-chart.png"
 							data-aos="slide-up" data-aos-once="true"><br>Big Data</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid white;"
+							style="border: 2px solid white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/hadoop-distributed-file-system.png"
 							data-aos="slide-up" data-aos-once="true"><br>Hadoop</div>
 					<div class="col" style="text-align: center; align-content: center;"><img class="icon-mobile"
-							style="border: 2px solid white;"
+							style="border: 2px solid white; border-radius: 10px;"
 							src="https://img.icons8.com/ultraviolet/96/000000/database.png" data-aos="slide-up"
 							data-aos-once="true"><br>SQL</div>
 				</div>
@@ -198,53 +244,53 @@
 			<!--Web-->
 			<div class="hide-mobile">
 				<div class="row">
-					<div class="col"><img style="border: 2px solid black; background-color: white;"
+					<div class="col"><img style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/python.png" data-aos="slide-up"
 							data-aos-once="true"><br>Python</img></div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" data-aos="slide-up"
 							data-aos-once="true"><br>Java</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/javascript.png" data-aos="slide-up"
 							data-aos-once="true"><br>JavaScript</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/react-native.png" data-aos="slide-up"
 							data-aos-once="true"><br>React Native</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/nodejs.png" data-aos="slide-up"
 							data-aos-once="true"><br>Node.js</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/c-programming.png" data-aos="slide-up"
 							data-aos-once="true"><br>C</div>
 				</div>
 				<div class="row">
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/amazon-web-services.png" data-aos="slide-up"
 							data-aos-once="true"><br>AWS</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/ios/96/000000/machine-learning.png" data-aos="slide-up"
 							data-aos-once="true"><br>Machine Learning</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/external-outline-juicy-fish/96/null/external-dev-coding-and-development-outline-outline-juicy-fish.png"
 							data-aos="slide-up" data-aos-once="true"><br>DevOps</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/dusk/96/000000/combo-chart.png" data-aos="slide-up"
 							data-aos-once="true"><br>Big Data</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/color/96/000000/hadoop-distributed-file-system.png"
 							data-aos="slide-up" data-aos-once="true"><br>Hadoop</div>
 					<div class="col" style="text-align: center; align-content: center;"><img
-							style="border: 2px solid black; background-color: white;"
+							style="border: 2px solid black; background-color: white; border-radius: 10px;"
 							src="https://img.icons8.com/ultraviolet/96/000000/database.png" data-aos="slide-up"
 							data-aos-once="true"><br>SQL</div>
 				</div>
@@ -261,10 +307,18 @@
 					<a href="https://www.amazon.com/" style="color: darkorange; ">
 						<img class="icon-mobile" src="images/aws.jpg" data-aos="slide-up" data-aos-once="true"><br>
 						Amazon Web Services
-					</a> <span style="color: gray; font-size: 12px;"><br> Cloud Infrastructure Architect | Jan 2022 -
+					</a> <span style="color: gray; font-size: 12px;"><br> Cloud Infrastructure Engineer | Jan 2022 -
 						Now <br>
-						Cloud Infrastructure Architect | Summer
+						Cloud Infrastructure Engineer | Summer
 						Internship 2021</span>
+				</div>
+				<div class="col" style="padding: 2%;">
+					<a href="https://play.google.com/store/apps/details?id=com.wellnessmobile.wellnessapp"><img
+							class="icon-mobile" src="./images/capstone.png" title="capstone" data-aos="zoom-in"
+							data-aos-once="true"></a>
+					<span style="color: gray; font-size: 12px;">
+						<br> Software Engineer Lead | Jan 2021 - Dec 2021
+					</span>
 				</div>
 				<div class="col" style="padding: 2%;">
 					<a href="https://www.microfocus.com/" style="color: blue; ">
@@ -279,9 +333,9 @@
 						<img class="icon-mobile" src="images/uottahack.png" data-aos="slide-up"
 							data-aos-once="true"><br>
 						uOttaHack
-					</a> <span style="color: gray; font-size: 12px;"><br> Attendee | February 2021 <br> Medicine Home
-						Devliery App | February 2020
-						<br> AR Colour Identifier | February 2019 </span>
+					</a> <span style="color: gray; font-size: 12px;"><br> Attendee | Feb 2021 <br> Medicine Home
+						Devliery App | Feb 2020
+						<br> AR Colour Identifier | Feb 2019 </span>
 				</div>
 				<div class="col" style="padding: 2%;">
 					<a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/" style="color: green; ">
@@ -294,7 +348,7 @@
 					<a href="https://www.international.gc.ca/gac-amc/index.aspx" style="color: black;">
 						<img class="icon-mobile" src="images/gac.jpeg" data-aos="slide-up" data-aos-once="true"><br>GAC
 					</a>
-					<span style="color: gray; font-size: 12px;"> <br>IT Security Specialist | Winter Coop 2019 </span>
+					<span style="color: gray; font-size: 12px;"> <br>Security Engineer | Winter Coop 2019 </span>
 				</div>
 				<div class="col" style="padding: 2%;">
 					<a href="https://www.cibc.com/" style="color: red;"><img class="icon-mobile" src="images/cibc.png"
@@ -306,44 +360,102 @@
 					<a href="https://www.lifelabs.com/" style="color: orange;"><img class="icon-mobile"
 							src="images/lifelabs.jpg" data-aos="slide-up" data-aos-once="true"><br>LifeLabs
 					</a>
-					<span style="color: gray; font-size: 12px;"> <br> Data Validation Intern | Part-Time Fall 2017
+					<span style="color: gray; font-size: 12px;"> <br> Software Test Engineer | Sep 2017 - Dec 2017
 					</span>
 				</div>
 			</div>
 			<!--Web-->
-			<div class="row hide-mobile">
-				<div class="col-md-12 hide-mobile">
-					<div class="main-timeline">
-						<a href="https://amazon.com/" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/aws.jpg"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-left" data-aos-once="true">Amazon Web Services</h3>
-								<p class="description" data-aos="fade-left" data-aos-once="true">
-									<b>Cloud Infrastructure Architect, Vancouver, January 2022</b><br />
-									I started my full-time journey by returning to the position extended at the end
-									of
-									my internship as a CIA in the Professional Services Team designing applications
-									and
-									working with customers to propogate solutions.
+			<div class="hide-mobile">
+				<div class=" main-timeline row">
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://amazon.com" class="row" style="vertical-align: top; align-content: baseline;">
+							<div class="col-md-1"><img class="icon-company" src="images/aws.jpg"></div>
+							<div class="col">
+								<h3 class="title" style="color: darkorange;">Amazon Web Services</h3>
+								<p class="description">
+									<b>Cloud Infrastructure Engineer</b><br />
+									<em>January 2022 - Now</em> | <em> Vancouver, BC </em> <br /><br />
+									I started my full-time journey by returning to the position extended at the end of
+									my internship as a Cloud Engineer in the Professional Services organization
+									designing
+									applications and working with customers to propogate solutions. I was instrumental
+									to the Shared Delivery Team and thrived as professional services consultant to 6 AWS
+									clients. Over the course of my time here I have programmed 10 highly-available &
+									scalable AWS infrastructure workloads using CDK, CloudFormation
+									& Terraform, developed applications, performed cloud migrations, established
+									pipelines, and setup customers
+									networking & AWS environments using a plethora of AWS services.
+									<br />
+									<br />
+									<!-- Major Highlights
+								<ul class="description hilights">
+									<li>
+										Using cutting edge tools such as Lambda, SNS, RDS I designed & engineered a
+										serverless Pub-Sub Node.js application to migrate 100000+ MB of data between 48
+										OracleDB and RDS Aurora tables
+									</li>
+									<li>
+										I designed, developed and automated state-of-the-art enterprise backup solution
+										deployed in 300+ AWS accounts to protect against ransomware attacks and provide
+										data, validation recovery & redundancy on Lambdas in Python (Backup, RDS, S3,
+										IaC)
+									</li>
+									<li>
+										Created microservice for DynamoDB data manipulation from API Gateway REST APIs
+										and Lambda in TypeScript CDK
+									</li>
+									<li>
+										Full-stack development of an AWS internal training & learning site for employees
+										in JavaScript using Lambda, API Gateway, Amplify and other services
+									</li>
+								</ul> -->
 								</p>
-								<br /><br />
-								<p class="description" data-aos="fade-left" data-aos-once="true">
-									<b>Cloud Infrastructure Architect, Vancouver, Summer 2021 Internship</b><br />
-									At AWS I was assigned a project to design and automate a pipeline for a
-									metric-based
-									analysis of AWS account resources that decreased manual creation time by 80%.
-									This
-									project was formed to design a customer-specific solution.
+								<br />
+								<p class="description">
+									<b>Cloud Infrastructure Engineer</b><br />
+									<em>Summer 2021 Internship</em> | <em>Vancouver, BC</em><br /><br />
+									During my 1st gig at AWS I was assigned a project to design and automate an ETL data
+									pipeline for a
+									quantitative analysis of AWS account resources and security metrics that decreased
+									manual creation time by 80%. This project was formed to design a customer-specific
+									solution.
 								</p>
 							</div>
 						</a>
-						<a href="https://www.microfocus.com/" class="timeline"
-							style="background-color: rgba(0, 0, 0, 0); color:  rgba(0, 0, 0, 0); opacity: 0.99;">
-							<div class="timeline-icon"><img class="icon" src="images/microfocus.jpg"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-right" data-aos-once="true">Micro Focus</h3>
-								<p class="description" data-aos="fade-right" data-aos-once="true">
-									<b>Cloud Engineer, Kanata (Ottawa), Summer 2020 Co-op</b><br />
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://play.google.com/store/apps/details?id=com.wellnessmobile.wellnessapp"
+							class="row">
+							<div class="col-md-1"><img class="icon-company" src="images/capstone.png"></div>
+							<div class="col">
+								<h3 class="title" style="color: orangered;">Wellness Hub | University of Ottawa</h3>
+								<p class="description">
+									<b>Software Engineer Lead</b><br />
+									<em>January 2021 - December 2021</em> | <em> Ottawa, ON </em><br /><br />
+									I believe in using my software engineering skills to improve the world. Which is why
+									I acted as both,
+									team lead and software engineer when I collaborated with the University of Ottawa
+									and developed a
+									mobile application for students to navigate health & wellness resources in the
+									community. Using a
+									MERN stack, my team and I were able to ship the product into a Beta release and
+									receive user feedback
+									in 8 months. It is currently available on Google Play Store, coming to the App Store
+									soon.
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://www.microfocus.com/" class="row">
+							<div class="col-md-1"><img class="icon-company" src="images/microfocus.jpg"></div>
+							<div class="col">
+								<h3 class="title" style="color: blue;">Micro Focus</h3>
+								<p class="description">
+									<b>Cloud Engineer</b><br />
+									<em> Summer 2020 Co-op</em> | <em>Ottawa, ON</em><br /><br />
 									I returned to Micro Focus as a Cloud Engineer.
 									My job focused on cloud infrastructure development using AWS to add cloud
 									capabilities for
@@ -351,29 +463,10 @@
 									collection enhancement. I also performed a marketing shadow to aid in the customer
 									outreach and product marketing initiatives at Micro Focus.
 								</p>
-							</div>
-						</a>
-						<a href="https://uottahack.ca/" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/uottahack2020.png"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-left" data-aos-once="true">uOttaHack</h3>
-								<p class="description" data-aos="fade-left" data-aos-once="true">
-									<b>Ottawa, February 2020</b><br />
-									I participated in the largest hackathon in Ottawa held at the University of
-									Ottawa
-									over two days. In a group of two, I worked on an application that works as
-									an Uber
-									Eats for medications.
-								</p>
-							</div>
-						</a>
-						<a href="https://www.microfocus.com/" class="timeline"
-							style="background-color: rgba(0, 0, 0, 0); color:  rgba(0, 0, 0, 0); opacity: 0.99;">
-							<div class="timeline-icon"><img class="icon" src="images/microfocus.jpg"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-right" data-aos-once="true">Micro Focus</h3>
-								<p class="description" data-aos="fade-right" data-aos-once="true">
-									<b>Software Engineer, Kanata (Ottawa), Fall 2019 Co-op</b><br />
+								<br /><br />
+								<p class="description">
+									<b>Software Engineer</b><br />
+									<em> Fall 2019 Co-op</em> | <em>Ottawa, ON</em><br /><br />
 									I worked as a software engineer at Micro Focus in the Data Integration &
 									Platform team. This location works on a security analytics software called
 									Interset for which I performed backend development.
@@ -381,51 +474,62 @@
 								</p>
 							</div>
 						</a>
-						<a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/google.jpg"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-left" data-aos-once="true">Google Tech
-									Challenge (Top
-									3)</h3>
-								<p class="description" data-aos="fade-left" data-aos-once="true">
-									<b>Ottawa, September 2019</b><br />
-									A tech challenge was held during Google's visit to the University of Ottawa.
-									My team
-									of three participated in the competition that required technical thinking
-									and swift
-									programming abilities to problem solve and work through the different stages
-									of the
-									multiple challenges. At the end of the competition, we ranked as one of the
-									Top 3
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://uottahack.ca/" class="row">
+							<div class="col-md-1"><img class="icon-company"
+									src="images/uottahack2020.png"><br /><br /><br /><br /><br />
+								<img class="icon-company" src="images/uottahack.png">
+							</div>
+							<div class="col">
+								<h3 class="title" style="color: purple;">uOttaHack</h3>
+								<p class="description">
+									<b>University of Ottawa</b><br />
+									<em> February 2020</em> | <em>Ottawa, ON</em><br /><br />
+									I participated in the largest hackathon in Ottawa held at the University of
+									Ottawa over two days. In a group of two, I worked on an application that works as
+									an Uber Eats for medications.
+								</p>
+								<br /><br />
+								<p class="description">
+									<b>University of Ottawa</b><br />
+									<em> February 2019</em> | <em>Ottawa, ON</em><br /><br />
+									I participated in the largest hackathon in Ottawa held at the University of
+									Ottawa over two days. In a group of two, I worked on an application that works as
+									an Uber Eats for medications.
+								</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://buildyourfuture.withgoogle.com/events/tech-challenge/" class="row">
+							<div class="col-md-1"><img class="icon-company" src="images/google.jpg"></div>
+							<div class="col">
+								<h3 class="title" style="color: green;">Google Tech Challenge</h3>
+								<p class="description">
+									<b>Google</b><br />
+									<em> September 2019</em> | <em>Ottawa, ON</em><br /><br />
+									A tech challenge was held during Google's visit to the University of Ottawa. My team
+									of
+									three participated in the competition that required technical thinking and swift
+									programming abilities to problem solve and work through the different stages of the
+									multiple challenges. At the end of the competition, we ranked as one of the Top 3
 									teams.
 								</p>
 							</div>
 						</a>
-						<a href="https://uottahack.ca/" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/uottahack.png"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-right" data-aos-once="true">uOttaHack</h3>
-								<p class="description" data-aos="fade-right" data-aos-once="true">
-									<b>Ottawa, February 2019</b><br />
-									I participated in the largest hackathon in Ottawa held at the University of
-									Ottawa
-									over two days. In a team of three, I worked on an Augmented Reality
-									application that
-									integrated Java and JavaScript code to detect and
-									identify colours that would initiate in-built sequences used primarily for
-									the
-									amusement of
-									the user.
-								</p>
-							</div>
-						</a>
-						<a href="https://www.international.gc.ca/gac-amc/index.aspx" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/gac.jpeg"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-left" data-aos-once="true">Global Affairs
-									Canada</h3>
-								<p class="description" data-aos="fade-left" data-aos-once="true">
-									<b>IT Security Specialist, Ottawa, Winter 2019 Co-op</b><br />
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://www.international.gc.ca/gac-amc/index.aspx" class="row">
+							<div class="col-md-1"><img class="icon-company" src="images/gac.jpeg"></div>
+							<div class="col">
+								<h3 class="title" style="color: red;">Global Affairs Canada</h3>
+								<p class="description">
+									<b>Security Engineer</b><br />
+									<em> Winter 2019 Co-op</em> | <em>Ottawa, ON</em><br /><br />
 									During my time at GAC, I got to work independently in a small team focusing on
 									gathering
 									data metrics and using data warehousing priciples to store them including the
@@ -435,35 +539,36 @@
 								</p>
 							</div>
 						</a>
-						<a href="https://www.cibc.com/" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/cibc.png"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-right" data-aos-once="true">CIBC</h3>
-								<p class="description" data-aos="fade-right" data-aos-once="true">
-									<b>Application Developer, Toronto, Summer 2018 Co-op</b><br />
-									Working at CIBC for my 1st co-op term helped me develop my Python
-									development skills
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://www.cibc.com/" class="row">
+							<div class="col-md-1"><img class="icon-company" src="images/cibc.png"></div>
+							<div class="col">
+								<h3 class="title" style="color: darkred;">CIBC</h3>
+								<p class="description">
+									<b>Application Developer</b><br />
+									<em> Summer 2018 Co-op</em> | <em>Toronto, ON</em><br /><br />
+									Working at CIBC for my 1st co-op term helped me develop my Python development skills
 									and
-									introduced me to the world of big data. I was also responsible for acting as
-									the
+									introduced me to the world of big data. I was also responsible for acting as the
 									system
-									admin
-									as a part of the small DevOps team in the Data Hub department.
+									admin as a part of the small DevOps team in the Data Hub department.
 								</p>
 							</div>
 						</a>
-						<a href="https://www.lifelabs.com/" class="timeline">
-							<div class="timeline-icon"><img class="icon" src="images/lifelabs.jpg"></div>
-							<div class="timeline-content">
-								<h3 class="title" data-aos="fade-left" data-aos-once="true" data-aos-offset="50">
-									LifeLabs
-								</h3>
-								<p class="description" data-aos="fade-left" data-aos-once="true" data-aos-offset="50">
-									<b>Data Validation Intern, Remote, Sept - Dec 2019 Part-time</b>
-									My first job gave me insight into the Agile environment and running sprints
-									while
-									testing the SalesForce web-app for use LifeLabs. I also developed a Java
-									program to
+					</div>
+
+					<div class="company" data-aos="slide-up" data-aos-once="true">
+						<a href="https://www.lifelabs.com/" class="row">
+							<div class="col-md-1"><img class="icon-company" src="images/lifelabs.jpg"></div>
+							<div class="col">
+								<h3 class="title" style="color: blue;">LifeLabs</h3>
+								<p class="description">
+									<b>Software Test Engineer</b><br />
+									<em> September 2017 - December 2017 </em> | <em>Toronto, ON</em><br /><br />
+									My first job gave me insight into the Agile environment and running sprints while
+									testing the SalesForce web-app for LifeLabs use. I also developed a Java program to
 									extract, cross-reference and create excel files.
 								</p>
 							</div>
@@ -483,7 +588,7 @@
 					<a href="https://play.google.com/store/apps/details?id=com.wellnessmobile.wellnessapp"><img
 							class="icon-mobile" src="./images/capstone.png" title="capstone" data-aos="zoom-in"
 							data-aos-once="true"></a>
-					<br>Health & Wellness App: Capstone Project<br>
+					<br>Health & Wellness Mobile App<br>
 					<span class="project-tech"> Available on the Google Play Store</span>
 					<p style="font-size: small;">A mobile app for
 						students to navigate health & wellness resources on the university campus & in the
@@ -521,9 +626,8 @@
 						<a class="img-project"
 							href="https://play.google.com/store/apps/details?id=com.wellnessmobile.wellnessapp">
 							<img class="img-project" src="./images/capstone.png" style="height: 216px; width: 216px;"
-								title="capstone" data-aos="zoom-in" data-aos-once="true"><br>Health & Wellness
-							Application: Capstone
-							Project
+								title="capstone" data-aos="zoom-in" data-aos-once="true">
+							<br>Health & Wellness Mobile Application
 						</a>
 						<p style="font-size: small;"> <span class="project-tech"> Available on the Google Play
 								Store</span>
@@ -573,24 +677,44 @@
 		<div id="contact" class="container-fluid bg-light align-content-center"
 			style="height: 100%; padding-top: 2%; padding-bottom: 2%; width: 100%; position: relative;">
 			<h3 class="section-title-dark" data-aos="slide-up" data-aos-once="true">Contact Me</h3>
-			<div class="row">
-				<div class="col" style="text-align: right;"><a href="https://www.linkedin.com/in/haardtrivedi/"><img
-							src="https://img.icons8.com/fluent/90/000000/linkedin.png"
-							title="https://www.linkedin.com/in/haardtrivedi/" data-aos="zoom-in"
-							data-aos-once="true"></a>
+			<!--Mobile-->
+			<div class="show-mobile">
+				<div class="row">
+					<div class="col" style="text-align: right;"><a href="https://www.linkedin.com/in/haardtrivedi/"><img
+								class="icon-mobile" src="https://img.icons8.com/fluent/96/000000/linkedin.png"
+								title="https://www.linkedin.com/in/haardtrivedi/"></a>
+					</div>
+					<div class="col" style="text-align: center;"><a href="https://github.com/HaardTrivedi"><img
+								class="icon-mobile" src="https://img.icons8.com/fluent/96/000000/github.png"
+								title="https://github.com/HaardTrivedi"></a>
+					</div>
+					<div class="col" style="text-align: left;"><a href="mailto:trivedi.haard99@gmail.com"><img
+								class="icon-mobile" src="https://img.icons8.com/fluent/96/000000/gmail.png"
+								title="https://github.com/HaardTrivedi"></a>
+					</div>
 				</div>
-				<div class="col" style="text-align: center;"><a href="https://github.com/HaardTrivedi"><img
-							src="https://img.icons8.com/fluent/90/000000/github.png"
-							title="https://github.com/HaardTrivedi" data-aos="zoom-in" data-aos-once="true"></a>
-				</div>
-				<div class="col" style="text-align: left;"><a href="mailto:trivedi.haard99@gmail.com"><img
-							src="https://img.icons8.com/fluent/90/000000/gmail.png"
-							title="https://github.com/HaardTrivedi" data-aos="zoom-in" data-aos-once="true"></a>
+			</div>
+			<!--Web-->
+			<div class="hide-mobile">
+				<div class="row">
+					<div class="col" style="text-align: right;"><a href="https://www.linkedin.com/in/haardtrivedi/"><img
+								src="https://img.icons8.com/fluent/96/000000/linkedin.png"
+								title="https://www.linkedin.com/in/haardtrivedi/" data-aos="zoom-in"
+								data-aos-once="true"></a>
+					</div>
+					<div class="col" style="text-align: center;"><a href="https://github.com/HaardTrivedi"><img
+								src="https://img.icons8.com/fluent/96/000000/github.png"
+								title="https://github.com/HaardTrivedi" data-aos="zoom-in" data-aos-once="true"></a>
+					</div>
+					<div class="col" style="text-align: left;"><a href="mailto:trivedi.haard99@gmail.com"><img
+								src="https://img.icons8.com/fluent/96/000000/gmail.png"
+								title="https://github.com/HaardTrivedi" data-aos="zoom-in" data-aos-once="true"></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="copyright-text bg-dark">Created By Haard Trivedi &copy; 2022</footer>
+	<footer class="copyright-text bg-dark">Created By Haard Trivedi &copy; 2023</footer>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
