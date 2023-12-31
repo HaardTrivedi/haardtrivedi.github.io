@@ -488,8 +488,25 @@ button {
     align-content: flex-start;
 }
 
+.company::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 4px solid black;
+    margin-top: 2.5%;
+    left: -4.9%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 .company:hover {
     background-color: #c5c5c5;
+}
+
+.company:nth-child(1)::before {
+    background-color: black;
 }
 
 
@@ -551,7 +568,6 @@ button {
 
 .main-timeline {
     position: relative;
-    opacity: 0.99;
     align-items: center;
     align-self: center;
     text-align: left;
@@ -559,22 +575,22 @@ button {
     padding-left: 6%;
 }
 
-.main-timeline:before {
+.main-timeline::before {
     content: "";
     width: 5px;
-    height: 100%;
+    height: 97%;
     border-radius: 20px;
     margin-left: 3%;
     background: black;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 3%;
+    left: 0%;
+    right: 0%;
 }
 
-.main-timeline:after {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0);
+.main-timeline::after {
+    background-color: blue;
+    color: blue;
     opacity: 0.99;
     width: 4%;
     height: 15%;
